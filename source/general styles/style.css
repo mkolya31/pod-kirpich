@@ -1,0 +1,32 @@
+
+
+.bold{
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+.text-container{
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 1px 3.8px 0.2px rgba(0,0,0,0.28);
+}
+
+.header{
+    font-weight:bold;
+    color: #ef3e46;
+  }
+
+.red{
+	color: #ef3e46;
+}
+
+.dark-grey{
+	color: #232323;
+}
+
+.text{
+    font-size:12pt;
+  }
