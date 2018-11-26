@@ -1,0 +1,105 @@
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=cyrillic-ext" rel="stylesheet"/>
+<div class="container">
+    <div class="item" onclick="location.href='/o-kompanii';"><i class="fas fa-info"><!--f--></i>
+        <p class="item-text">О нас</p>
+    </div>
+
+    <div class="item" onclick="location.href='/aktsii-i-skidki';"><i class="fas fa-percent"><!--f--></i>
+
+        <p class="item-text">скидки</p>
+    </div>
+
+    <div class="item" onclick="location.href='/nash-adres';"><i class="kirpich truck"><!--f--></i> <span
+            class="item-text svg">Доставка</span></div>
+
+    <div class="item" onclick="location.href='/nash-adres';"><i class="fas fa-map-marked-alt"><!--f--></i>
+
+        <p class="item-text">Самовывоз</p>
+    </div>
+</div>
+<style type="text/css">.item {
+    color: #ef3e46;
+    background: white;
+    border-style: solid;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+i {
+    margin-top: 1.5rem;
+    font-size: 4rem;
+}
+
+.item-text {
+    margin-bottom: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+p {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em !important;
+    margin-bottom: 0.83em !important;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+div a:hover {
+    color: #333;
+}
+
+.item:hover {
+    color: white;
+    background: #ef3e46;
+    transition: 0.5s;
+    border-color: #ef3e46;
+    transform: scale(1.04);
+}
+
+@font-face {
+    font-family: 'kirpich_regular';
+    src: url('/f/font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kirpich {
+    font-family: 'kirpich_regular';
+    display: inline-block;
+    font-style: normal;
+}
+
+.kirpich.truck::before {
+    content: '.';
+    font-size: 6.5rem;
+}
+
+.svg {
+    margin: 0 0 0 0;
+!important font-size: 1.5 em;
+    padding-bottom: 4.18rem;
+}
+</style>

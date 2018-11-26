@@ -1,6 +1,5 @@
-
-<link href="/f/style.css" rel="stylesheet" />
-<link href="/f/style.css" rel="stylesheet" />
+<link href="/f/style.css" rel="stylesheet"/>
+<link href="/f/style.css" rel="stylesheet"/>
 <div id="tabs">
     <ul class="my-ul">
         <li class="my-li"><a href="#tabs-1" title="">Коротко о нас</a></li>
@@ -11,9 +10,14 @@
         <div id="tabs-1">
             <p class="bold main-head">Интернет-магазин декоративной плитки под кирпич</p>
 
-            <p class="text">В последнее время одним из самых популярных материалов для внутренней и внешней отделки стала плитка под кирпич. И неудивительно! Ведь с её помощью быстро и недорого можно полностью преобразить городскую квартиру, загородный дом, коммерческое помещение, оформив их в актуальных стилях Лофт, Прованс или Хай-тек.</p>
+            <p class="text">В последнее время одним из самых популярных материалов для внутренней и внешней отделки
+                стала плитка под кирпич. И неудивительно! Ведь с её помощью быстро и недорого можно полностью
+                преобразить городскую квартиру, загородный дом, коммерческое помещение, оформив их в актуальных стилях
+                Лофт, Прованс или Хай-тек.</p>
 
-            <p class="text">Наш интернет-магазин предлагает выгодно купить плитку под кирпич в Москве по доступным ценам. Выбрать подходящий именно вам материал, стиль и оттенок можно из обширного каталога плитки под кирпич, размещённого на нашем сайте.</p>
+            <p class="text">Наш интернет-магазин предлагает выгодно купить плитку под кирпич в Москве по доступным
+                ценам. Выбрать подходящий именно вам материал, стиль и оттенок можно из обширного каталога плитки под
+                кирпич, размещённого на нашем сайте.</p>
         </div>
 
         <div id="tabs-2">
@@ -23,9 +27,12 @@
                 <li class="red"><span class="text">Широчайший выбор фактур и оттенков</span></li>
                 <li class="red"><span class="text">Точная имитация современного или старинного кирпича</span></li>
                 <li class="red"><span class="text">Прочность и долговечность</span></li>
-                <li class="red"><span class="text">Небольшая (от 0,5 см) толщина, экономящая внутреннее пространство помещений</span></li>
-                <li class="red"><span class="text">Небольшой (от 6,5 кг/м2) вес, позволяющий не перегружать несущие конструкции</span></li>
-                <li class="red"><span class="text">Наличие угловых элементов, с помощью которых можно быстро и красиво облицевать углы стен, оконные и дверные проёмы, арки, колонны</span></li>
+                <li class="red"><span class="text">Небольшая (от 0,5 см) толщина, экономящая внутреннее пространство помещений</span>
+                </li>
+                <li class="red"><span class="text">Небольшой (от 6,5 кг/м2) вес, позволяющий не перегружать несущие конструкции</span>
+                </li>
+                <li class="red"><span class="text">Наличие угловых элементов, с помощью которых можно быстро и красиво облицевать углы стен, оконные и дверные проёмы, арки, колонны</span>
+                </li>
                 <li class="red"><span class="text">Простой монтаж</span></li>
             </ul>
         </div>
@@ -66,18 +73,18 @@
     overflow: hidden;
     position: relative;
     background: white;
-    box-shadow: 0 1px 3.8px 0.2px rgba(0,0,0,0.28);
+    box-shadow: 0 1px 3.8px 0.2px rgba(0, 0, 0, 0.28);
 }
 
 #tabs_container div {
     margin-right: 40px;
 }
 
-.my-li{
-    color: rgba(0,0,0,0);
+.my-li {
+    color: rgba(0, 0, 0, 0);
 }
 
-.my-ul{
+.my-ul {
     margin-block-start: 0;
     margin-block-end: 10px;
     padding-inline-start: 0;
@@ -158,21 +165,23 @@
         $('#tabs').tabulous();
 
     });
-</script><script>
-    $(document).ready(function($) {
+</script>
+<script>
+    $(document).ready(function ($) {
 
 
         $('#tabs').tabulous({
             effect: 'scale'
         });
-</script><script>
+</script>
+<script>
     /*!
  * strength.js
  * Original author: @aaronlumsden
  * Further changes, comments: @aaronlumsden
  * Licensed under the MIT license
  */
-    ;(function ( $, window, document, undefined ) {
+    ;(function ($, window, document, undefined) {
 
         var pluginName = "tabulous",
             defaults = {
@@ -181,10 +190,10 @@
 
         // $('<style>body { background-color: red; color: white; }</style>').appendTo('head');
 
-        function Plugin( element, options ) {
+        function Plugin(element, options) {
             this.element = element;
             this.$elem = $(this.element);
-            this.options = $.extend( {}, defaults, options );
+            this.options = $.extend({}, defaults, options);
             this._defaults = defaults;
             this._name = pluginName;
             this.init();
@@ -192,7 +201,7 @@
 
         Plugin.prototype = {
 
-            init: function() {
+            init: function () {
 
                 var links = this.$elem.find('a');
                 var firstchild = this.$elem.find('li:first-child').find('a');
@@ -213,13 +222,13 @@
 
                 var alldivs = this.$elem.find('div:first').find('div');
 
-                alldivs.css({'position': 'absolute','top':'40px'});
+                alldivs.css({'position': 'absolute', 'top': '40px'});
 
-                firstdiv.css('height',firstdivheight+'px');
+                firstdiv.css('height', firstdivheight + 'px');
 
                 firstchild.addClass('tabulous_active');
 
-                links.bind('click', {myOptions: this.options}, function(e) {
+                links.bind('click', {myOptions: this.options}, function (e) {
                     e.preventDefault();
 
                     var $options = e.data.myOptions;
@@ -234,50 +243,44 @@
 
                     links.removeClass('tabulous_active');
                     mythis.addClass('tabulous_active');
-                    thisdivwidth = thisform.find('div'+thislink).height();
+                    thisdivwidth = thisform.find('div' + thislink).height();
 
                     if (effect == 'scale') {
                         alldivs.removeClass('showscale').addClass('make_transist').addClass('hidescale');
-                        thisform.find('div'+thislink).addClass('make_transist').addClass('showscale');
+                        thisform.find('div' + thislink).addClass('make_transist').addClass('showscale');
                     } else if (effect == 'slideLeft') {
                         alldivs.removeClass('showleft').addClass('make_transist').addClass('hideleft');
-                        thisform.find('div'+thislink).addClass('make_transist').addClass('showleft');
+                        thisform.find('div' + thislink).addClass('make_transist').addClass('showleft');
                     } else if (effect == 'scaleUp') {
                         alldivs.removeClass('showscaleup').addClass('make_transist').addClass('hidescaleup');
-                        thisform.find('div'+thislink).addClass('make_transist').addClass('showscaleup');
+                        thisform.find('div' + thislink).addClass('make_transist').addClass('showscaleup');
                     } else if (effect == 'flip') {
                         alldivs.removeClass('showflip').addClass('make_transist').addClass('hideflip');
-                        thisform.find('div'+thislink).addClass('make_transist').addClass('showflip');
+                        thisform.find('div' + thislink).addClass('make_transist').addClass('showflip');
                     }
 
 
-                    firstdiv.css('height',thisdivwidth+'px');
-
-
+                    firstdiv.css('height', thisdivwidth + 'px');
 
 
                 });
 
 
-
-
-
-
             },
 
-            yourOtherFunction: function(el, options) {
+            yourOtherFunction: function (el, options) {
                 // some logic
             }
         };
 
         // A really lightweight plugin wrapper around the constructor,
         // preventing against multiple instantiations
-        $.fn[pluginName] = function ( options ) {
+        $.fn[pluginName] = function (options) {
             return this.each(function () {
-                new Plugin( this, options );
+                new Plugin(this, options);
             });
         };
 
-    })( jQuery, window, document );
+    })(jQuery, window, document);
 
 </script>
